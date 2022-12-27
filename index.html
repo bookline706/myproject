@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700&family=Satisfy&display=swap" rel="stylesheet">
+
+  <!----  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">-->
+    
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.6/css/selectize.bootstrap5.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Natuush</title>
+</head>
+<body>
+    <div class="main-contaner content asside cart_2 "  id="wrapper"> 
+        <!-------------start asside---------->
+       
+        <div class="main-asside ">
+            <div class="icon">
+                <i class="fas fa-close menuclos"></i>
+            </div>
+            <center><div class="logo">
+                <h3>Natuush</h3>
+            </div></center>
+       
+            <ul class="nav">
+                <li><a href="#home" class=" menuclose"><i class="fa fa-home menuclose"></i>Home</a></li>
+                <li><a href="#food"  class=" menuclose"><i class="fas fa-bread-slice	"></i>Foods</a></li>
+                <li><a href="#about"  class=" menuclose"><i class="fa-solid fa-info"></i>About</a></li>
+                
+                <li><a href="#contact"  class=" menuclose"><i class="fa-solid fa-comment"></i>Contact</a></li>
+            </ul>
+
+            <div class="theme-buttons-container">
+                <span class="color" style="background:rgb(0, 126, 164);"></span>
+            
+                <span class="color" style="background:rgb(219, 140, 36);"></span>
+                <span class="color" style="background:rgb(218, 35, 235);"></span>
+                <span class="color" style="background:rgb(52, 29, 255);"></span><br>
+                <span class="color" style="background:rgb(12, 129, 1);"></span>
+                <span class="color" style="background:rgb(156, 108, 175);"></span><br>
+                <span class="color" style="background:rgb(8, 119, 122);"></span>
+                <span class="color" style="background:rgb(255, 0, 0);"></span>
+               
+            </div>
+            <div class="shawakh">
+                 <a href="https://www.shawakhtechnology.com/">Shawakhtechnology.com</a>
+            </div>
+        </div>
+        <!-------------end asside---------->
+
+
+
+        <!-------------start content---------->
+        <div class="main-content ">
+          <div class="header-top">
+            <div class="card-header hed">
+                <i class="fas fa-bars menu-1"></i>
+                 <i class="fas fa-bars menu"></i>
+                  <i class="fas fa-user open-profile"></i>
+                  <i class="fa-solid fa-cart-shopping opencart"><span class="total-items-in-cart">0</span></i>
+                  <i class="fas fa-heart openhearts"><span>0</span></i>
+                 <i name="close-outline" class="fas fa-sun close"></i>
+                <i name="open-outline" class="fas fa-moon toggleButton"></i>
+               </div>
+               <div class="search">
+                <div class="catygor">
+                    <span>All </span>
+                    <select class="form-control" name="catygory" id="">
+                        <option value="">Select product</option>
+                        <option value="">Cake</option>
+                        <option value="">Cake</option>
+                        <option value="">Cake</option>
+                        <option value="">Cake</option>
+                        <option value="">Cake</option>
+                        <option value="">Cake</option>
+                    </select>
+                </div>
+                <div class="serch">
+                    <input type="text" placeholder="Search here.." class="form-control">
+                    <button>Search</button>
+                </div>
+               </div>
+          </div>
+           <section class="home"id="home">
+         <!----  <div class="bng">
+              <h3>Natuush</h3>
+              <p>Natuush resturant You can find different foods such as:
+                rice, chicken,tea,etc.</p>
+                <button>Contact Us</button>
+           </div>--->
+           <div class="shape"></div>
+           </section>
+        
+
+    
+        <section class="foods" id="food">
+            <div class="food">
+               <center> <h3>Dishes</h3></center>
+            </div>
+            
+          
+      <div class="container productss list"></div>
+      <!--  -->
+      <ul class="listPage">
+
+      </ul>
+        </section>
+        <style>
+         
+        </style>
+        <section class="about" id="about">
+            <div class="food">
+               <center> <h3>About</h3></center>
+            </div>
+           
+            <div class="abou-us">
+                <div class="contents">
+                    <h3>Naduush</h3>
+                    <p>Taxonomy is the science of naming, 
+                        describing and classifying organisms 
+                        and includes all plants, animals and 
+                        microorganisms of the world</p>
+                </div>
+                 <div class="imgb">
+                    <img src="imag/img/about-img.png" alt="" style="border: none;">
+                 </div>
+                 <div class="shap"></div>
+            </div>
+          
+        </section>
+        <section class="Galery" id="Galery">
+            <div class="food">
+                <center> <h3>Galeries</h3></center>
+             </div>
+            <div class="imag lists-galery">
+                 <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+                <img class="items" src="imag/chef1.png" alt="">
+                <img class="items" src="imag/chef2.png" alt="">
+                <img class="items" src="imag/chef3.jpg" alt="">
+                <img class="items" src="imag/chef4.jpg" alt="">
+                <img class="items" src="imag/chocolate.jpg" alt="">
+                <img class="items" src="imag/chocolate_Drink.jpg" alt="">
+                <img class="items" src="imag/cake.jpg" alt="">
+                <img class="items" src="imag/ice_cream.jpg" alt="">
+            </div>
+            
+            <div class="text-center">
+                <!-- parent element for pagination menu list -->
+                <ul class="pagination custom-pagination"></ul>
+
+                <!-- prepare necessary element attributes to pass parameters for pagination -->
+                <input type="hidden" id="itemCount" value="">
+                <input type="hidden" id="pageLimit" value="10">
+            </div>
+            <ul class="listPag">
+
+            </ul>
+        </section>
+        <section class="contact" id="contact">
+            <div class="food">
+              <center>  <h3>Contact-Us</h3></center>
+            </div>
+            <div class="numbers">
+                <span class="number">
+                    <h3>Email</h3>
+                    <a href="#">0633454984</a>
+                </span>
+                <span class="number">
+                    <h3>Whatsapp</h3>
+                    <a href="#">0633454984</a>
+                </span>
+                <span class="number">
+                    <h3>Facebook</h3>
+                    <a href="#">Natuush</a>
+                </span>
+                <span class="number">
+                    <h3>Instgram</h3>
+                    <a href="#">Natuush</a>
+                </span>
+            </div>
+            <div class="container container-1" >
+               
+                    <form action="" class="form-1" >
+                     <div class="img-waiter">
+                        <img src="imag/img/waiter.jpg" alt="">
+                     </div>
+                      <div class="bg">
+                        <input type="text" class="fullname" placeholder="Your Email" >
+                        <input type="text" class="phone" placeholder="Your Phone"><br>
+                        <input type="text" class="email" placeholder="Your Full Name"><br>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Massege">
+                     
+                           
+
+                        </textarea>
+                      <center>  <button class="btn">Send Massege</button></center>
+                    </div>
+                    </form>
+               
+            </div>
+        </section>
+
+
+        <section class="cart">
+            <form action="" method="post">
+               <div class="close-cart">
+                <i class="fas fa-close closecart"></i>
+               </div>
+                <div class="cart-all">
+                    <div class="cart-header">
+                      
+                 
+                        </script>
+                    </div>
+                    <div class="  content-item item-oder">
+ 
+                      
+
+                    </div>
+                    
+                    <div class="block ">
+                       
+                       
+                    <div class="cart-total">
+                        <div class="total-price">
+                            <span class="totals">Total Price:</span> <span class="price total">$0</span>
+                        </div>
+                       
+                        
+                        
+                       
+                        <button style="width: 100%; background-color: var(--swich-color); color: white; padding: .3rem; margin-top: -.5rem; border-radius: .5rem;" class="add-to-cart addtocart ">
+                            Buy
+                          </button>
+                    </div>
+                   
+                   
+                </div>
+                
+            </form>
+        </section>
+
+        
+        
+    
+        <section class="hearts">
+            <form action="" method="post">
+               <div class="close-cart">
+                <i class="fas fa-close closeheart"></i>
+               </div>
+                <div class="cart-all">
+                    <div class="cart-header">
+                      
+                 
+                        </script>
+                    </div>
+                    <div class="  content-heart">
+ 
+                        <div class="cart-menu heer action">
+                           <div class="heart-menu">
+                            <div class="cart-img"> 
+                           
+                                <img src="image/bg.jpg" alt=""/>
+                                  </div> <div class="cart-des">
+                                    <div class="cart-name">
+                                        <span>TEST </span>
+                                          </div>  <div class="cart-price">  
+                                            <span class="price">price:</span>
+                                            <span class="first ">$12.00</span>  
+                                     </div> 
+                                    </div> <i class="fas fa-trash cart_remove" ></i>
+                                
+                           </div>
+                            <button>Add Cart</button>
+                            </div>
+                          
+                             <!-----0637878502------->
+                              
+
+                    </div>
+                    
+                    <div class="block her">
+                       
+                       
+                    <div class="cart-total">
+                        <div class="total-price">
+                            <span class="totals">Total Price:</span> <span class="price total">$0</span>
+                        </div>
+                       
+                        
+                        
+                        
+                    </div>
+                   
+                
+                </div>
+                
+            </form>
+        </section>
+
+
+
+
+
+
+
+<!-- start Profile---->
+
+<section class="profile">
+    <div class="close-profile">
+        <i class="fa-sharp fa-solid fa-left-long"><span>Logout</span></i>
+        <i class="fas fa-close closeprofile"></i>
+    </div>
+<div class="profile-face">
+    <center><img src="image/bg.jpg" alt=""></center>
+</div>
+
+
+<div class="profileInfo">
+  <div class="top">
+    <h1>Hi</h1> <h2>Username</h2>
+  </div>
+  <div class="center" >
+    <a href="oder-c.html"><i class="fa-sharp fa-solid fa-right-long"></i><span>Your Oder</span></a><br><br>
+   <a href="Edit-profile-c.html"><i class="fa-sharp fa-solid fa-right-long"></i><span>Change Your Profile</span></a>
+
+  </div>
+  
+</div>
+</section>
+
+
+<!-- end Profile---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-----
+<section class="oder-prodect" style="">
+    <form action="" style=" display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,4fr));
+  gap: 3rem;">
+    <div class="container container-1 container-22">
+       
+        <div class="form-1 form-2" >
+          <div class="bg">
+            <input type="text" class="fullname" placeholder="Your Email" >
+            <input type="text" class="phone" placeholder="Your Phone"><br>
+            <input type="text" class="email" placeholder="Your Full Name"><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Massege">
+         
+               
+
+            </textarea>
+            <br><br>
+          <center>  <button class="btn">Oder</button></center>
+        </div>
+       
+    </div>
+   
+</div>
+<div class="  content-item">
+ 
+                      
+
+</div>
+    </form>
+  </section>
+
+-->
+
+
+
+       <section class="footer">
+      
+        <div class="content">
+            <div class="top-2">
+                <ul class="catigory catigory-1">
+                    <h3>Natuush</h3>
+                    <p>Taxonomy is the science of naming, 
+                        describing and classifying organisms 
+                        and includes all plants, animals and 
+                        microorganisms of the world</p>
+                        <li class="social">
+                            <i class="fa-brands fa-facebook-f"></i>      
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-instagram"></i>                  </li>
+                    </ul>
+                <ul class="catigory">
+                    <h3>Catygory</h3>
+                     <li>Cake</li>
+                     <li>Tea</li>
+                     <li>Sandwich</li>
+                     
+                </ul>
+                <ul class="catigory">
+                    <h3>Headers</h3>
+                    <li>Home</li>
+                    <li>ABOUT</li>
+                    <li>Foods</li>
+                    <li>Best Oder</li>
+                    <li>Contact Us</li>
+               </ul>
+               <ul class="catigory">
+                <h3>Acounts</h3>
+                <li>Profile</li>
+                <li>Cart</li>
+                <li>Oder</li>
+                <li>Chickout</li>
+           </ul>
+            </div>
+            
+        </div>
+        <div class="bottom">
+            <span><h3>Copyright:</h3><a href="https://www.shawakhtechnology.com/">shawakhtechnology.com</a></span>
+        </div>
+      
+          
+       </section>
+      </body>
+      </html>
+      
+       <div class="nav-2">
+        <ul class="nav-1 ">
+            <li><a href="#home" class=" menuclose"><i class="fa fa-home menuclose"></i></a></li>
+            <li><a href="#food"  class=" menuclose"><i class="fas fa-bread-slice	"></i></a></li>
+            <li><a href="#about"  class=" menuclose"><i class="fa-solid fa-info"></i></a></li>
+          
+            <li><a href="#contact"  class=" menuclose"><i class="fa-solid fa-comment"></i></a></li>
+        </ul>
+       </div>
+        <div class="theme-buttons-container-1 colors">
+            <div class="top">
+                <i class="fas fa-close menuclose-1"></i>
+            </div>
+            <span class="color" style="background:rgb(0, 126, 164);"></span>
+            <span class="color" style="background:rgb(219, 140, 36);"></span><br>
+            <span class="color" style="background:rgb(218, 35, 235);"></span>
+            <span class="color" style="background:rgb(52, 29, 255);"></span><br>
+            <span class="color" style="background:rgb(12, 129, 1);"></span>
+            <span class="color" style="background:rgb(156, 108, 175);"></span><br>
+            <span class="color" style="background:rgb(8, 119, 122);"></span>
+            <span class="color" style="background:rgb(255, 0, 0);"></span>
+           
+           
+        </div>
+        </div>
+       
+        <!------------end content----------->
+
+
+        
+    </div>
+    <script>
+        document.querySelectorAll('.theme-buttons-container .color').forEach(color =>{
+
+       color.onclick = () => {
+        let background = color.style.background;
+        document.querySelector(':root').style.setProperty('--swich-color', background);
+       }
+});
+document.querySelectorAll('.theme-buttons-container-1 .color').forEach(color =>{
+
+color.onclick = () => {
+ let back = color.style.background;
+ document.querySelector(':root').style.setProperty('--swich-color', back);
+}
+});
+       
+ 
+    </script>
+    <script src="products.js"></script>
+    <script src="js.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
